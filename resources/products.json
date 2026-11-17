@@ -1,0 +1,29 @@
+{
+  "name": "products",
+  "fields": {
+    "sku": {
+      "type": "TEXT",
+      "required": true
+    },
+    "name": {
+      "type": "TEXT",
+      "required": true
+    },
+    "description": {
+      "type": "TEXT",
+      "required": true
+    },
+    "status": {
+      "type": "TEXT",
+      "required": true,
+      "choices": [
+        "draft",
+        "active",
+        "discontinued"
+      ]
+    }
+  },
+  "operations": [
+    "crud"
+  ]
+}
